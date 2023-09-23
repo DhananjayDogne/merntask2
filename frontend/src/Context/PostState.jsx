@@ -6,7 +6,7 @@ const PostState = (props) => {
 
     const postInitial = []
     const [posts, setPosts] = useState(postInitial);
-    const host = process.env.REACT_APP_HOSTURL;
+    const host = 'https://mern2backend.vercel.app';
     const [userName, setUserName] = useState('');
     //fetch All Posts  
     const allPosts = async () => {
