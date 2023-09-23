@@ -101,7 +101,7 @@ const PostState = (props) => {
     }
     //Create New User
     const createUser = async (name, email, password) => {
-        const response = await fetch(`http://www.localhost:3300/api/auth/createUser`, {
+        const response = await fetch(`${host}/api/auth/createUser`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -126,7 +126,7 @@ const PostState = (props) => {
     }
     const LoginUser = async (user) => {
 
-        const response = await fetch(`${process.env.REACT_APP_HOSTURL}/api/auth/login`, {
+        const response = await fetch(`${host}/api/auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

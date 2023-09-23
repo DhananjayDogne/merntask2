@@ -16,8 +16,7 @@ const port = process.env.PORT || 3300
 //cross origin
 app.use(cors(
     {
-        origin: ["https://merntask2-frontend.vercel.app/"],
-        methods: ["POST", "PUT", "GET", "DELETE"],
+        origin: 'https://merntask2-frontend.vercel.app',
         credentials: true
     }
 ))
