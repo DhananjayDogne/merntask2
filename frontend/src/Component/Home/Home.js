@@ -23,7 +23,7 @@ const Home = () => {
     return (
         <>
         {popup && <EditPost setPopup={setPopup} />}
-        <div className="text-center w-[100%] m-[1rem] ">
+        <div className="text-center m-[1rem] ">
                 {  posts.length>0 ?(
                     posts.map((post) => {
                         return <ShowPosts key={post._id} post={post} setPopup={setPopup} />
