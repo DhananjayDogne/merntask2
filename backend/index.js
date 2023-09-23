@@ -11,7 +11,7 @@ dotenv.config();
 connectToMongo();
 
 const app = express()
-const port = 3300
+const port = process.env.PORT || 3300
 
 //cross origin
 app.use(cors(
