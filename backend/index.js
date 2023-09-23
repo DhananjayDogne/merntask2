@@ -14,7 +14,13 @@ const app = express()
 const port = 3300
 
 //cross origin
-app.use(cors())
+app.use(cors(
+  {
+    origin:["https://merntask2-frontend.vercel.app/"],
+    methods:["POST","PUT","GET","DELETE"],
+    credentials:true
+  }
+))
 //middleware to parse json data from request body
 app.use(express.json())
 // Helmet helps you secure your Express apps by setting various HTTP headers. It's not a silver bullet, but it can help!
