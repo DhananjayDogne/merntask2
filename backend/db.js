@@ -9,7 +9,7 @@ const connectToDB = async () => {
     //     return;
     // }
     try {
-        await mongoose.connect(process.env.MONGODB_URI, {
+        await mongoose.connect("mongodb+srv://dhananjaydogne:DD@cluster0.q565lol.mongodb.net/?retryWrites=true&w=majority", {
             dbName: "merntask2",
             useNewUrlParser: true,
             useUnifiedTopology: true,
