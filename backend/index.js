@@ -16,7 +16,7 @@ const port = 3300
 //cross origin
 app.use(cors(
   {
-    origin:["https://merntask2-frontend.vercel.app/"],
+    origin:["https://merntask2-frontend.vercel.app"],
     methods:["POST","PUT","GET","DELETE"],
     credentials:true
   }
