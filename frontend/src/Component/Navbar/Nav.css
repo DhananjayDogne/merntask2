@@ -1,0 +1,23 @@
+.link {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #f2e9e9;
+    font-weight: 600;
+}
+
+.link:hover,
+.nav_logout:hover {
+    color: white;
+}
+
+.link.active {
+    color: white;
+}
+
+.nav_logout {
+    cursor: pointer;
+    margin: 0 10px;
+    color: #d21e1e;
+    font-weight: 600;
+    font-size: medium;
+}
