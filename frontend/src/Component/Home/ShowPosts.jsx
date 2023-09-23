@@ -54,7 +54,7 @@ const ShowPosts = ({ post }) => {
     return (
         <>
            
-        <div className="w-[50%] my-[1rem] m-auto p-[1rem] border-[1px] border-white rounded bg-[#17f9e329]">
+        <div className="postcontainer my-[1rem] m-auto p-[1rem] border-[1px] border-white rounded bg-[#17f9e329]">
             <div className="flex m-auto w-[100%] bg-[#ffffff5c] rounded py-1 px-2">
                 {/* <img src="https://th.bing.com/th?id=OIP.puMo9ITfruXP8iQx9cYcqwHaGJ&w=274&h=227&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" className="w-[10%] p-1 rounded-full" alt="" /> */}
                 <h1 className='my-auto text-xl'>{ post.userName}</h1>

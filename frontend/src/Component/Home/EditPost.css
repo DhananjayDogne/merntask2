@@ -42,3 +42,12 @@
         border-color: rgb(140, 241, 241);
         outline-style: none;
  }
+.postcontainer{
+    width: 50%;
+}
+@media screen and (max-width: 768px) {
+    .postcontainer {
+        width: 90%;
+    }
+
+}
