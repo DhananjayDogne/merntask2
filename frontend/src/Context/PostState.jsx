@@ -126,10 +126,11 @@ const PostState = (props) => {
     }
     const LoginUser = async (user) => {
 
-        const response = await fetch(`${host}/api/auth/login`, {
+        const response = await fetch(`https://mern2backend.vercel.app/api/auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
+                "auth-token": localStorage.getItem('token')
             },
             body: JSON.stringify({ email: user.email, password: user.password })
         });

@@ -10,28 +10,7 @@ const Login = () => {
         email: '',
         password: ''
     });
-    // const LoginUser = async () => {
-
-    //     const response = await fetch(`${process.env.REACT_APP_HOSTURL}/api/auth/login`, {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json",
-    //         },
-    //         body: JSON.stringify({ email: user.email, password: user.password })
-    //     });
-    //     const json = await response.json();
-    //     console.log(json);
-    //     if (json._id) {
-    //         //Save And Redirect To Home
-    //         localStorage.setItem("token", json._id);
-    //         navigate('/');
-    //     } else {
-    //         if (json.error) alert(json.error);
-    //         else {
-    //             alert("Some error occurred .PLease try again !");
-    //         }
-    //     }
-    // }
+   
 
     const handleChange = (e) => {
         setUser({ ...user, [e.target.name]: e.target.value });
@@ -50,12 +29,12 @@ const Login = () => {
                 <h1 className='text-3xl text-center my-2'>Login</h1>
 
                 <div className='login_row'>
-                    <h4 className='login_email text-lg'>Email</h4>
-                    <input className="text-black" type='email' name='email' onChange={handleChange} required />
+                    <h4 className=' my-2 text-lg'>Email</h4>
+                    <input className="text-black w-[100%]" type='email' name='email' onChange={handleChange} required />
                 </div>
                 <div className='login_row'>
-                    <h4 className='m-auto text-lg'>Password</h4>
-                    <input className="text-black" type='password' name='password' onChange={handleChange} required />
+                    <h4 className='text-start my-2 text-lg'>Password</h4>
+                    <input className="text-black w-[100%]" type='password' name='password' onChange={handleChange} required />
                 </div>
                 <div className='m-auto text-center'>
                     <button className='button text-center'>Submit</button>

@@ -17,16 +17,14 @@
 }
 .login_row{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin:1rem 0;
+    text-align: start;
+    margin:1rem;
 }
-.login_email{
-    margin:0 1rem;
-}
+
 .login_row input{
     width: 100%;
-    margin:0 1rem;
     padding: 0.5rem 0.3rem;
     font-size: large;
     border-radius: 12px;
@@ -46,4 +44,11 @@
 .login_container>button:hover,button:hover{
     background-color: rgb(224, 255, 255);
     color: rgb(16, 155, 155);
+}
+
+@media screen and (max-width: 768px) {
+    .login_container{
+        width: 90%;
+    }
+
 }

@@ -13,29 +13,7 @@ const Signup = () => {
         password: ''
     });
     
-    // const createUser = async (name,email,password) => {
-    //     const response = await fetch(`http://www.localhost:3300/api/auth/createUser`, {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body: JSON.stringify({ name,email,password })
-    //     })
-
-    //     const json = await response.json();
-    //     console.log(json);
-
-    //     //save int local store
-    //     if (json._id) {
-    //         localStorage.setItem('token', json._id);
-    //         navigate('/');
-    //     } else {
-    //         if (json.error) alert(json.error);
-    //         else {
-    //             alert("Some error occurred .PLease try again !");
-    //         }
-    //     }
-    // }
+    
     const handleSubmit = async(e) => {
         e.preventDefault();
         await createUser(user.name, user.email, user.password);
@@ -62,7 +40,7 @@ const Signup = () => {
                     <input className="text-black" type='email' name='email' onChange={handleChange} required />
                 </div>
                 <div className='login_row'>
-                    <h4>Password</h4>
+                    <h4 className='text-start'>Password</h4>
                     <input className="text-black" type='password' name='password' onChange={handleChange} required />
                 </div>
                 <div className='m-auto text-center'>
